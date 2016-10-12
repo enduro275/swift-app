@@ -30,17 +30,39 @@
                                     <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4fO-2I-sIF"/>
                                 </connections>
                             </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="sDu-SY-fHN">
+                                <rect key="frame" x="251" y="199" width="100" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="4We-8M-TVu"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2GM-kN-ZVY">
+                                <rect key="frame" x="251" y="259" width="100" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="2fA-uP-mxk"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="sDu-SY-fHN" firstAttribute="top" secondItem="Jh2-U2-QMv" secondAttribute="bottom" constant="58" id="6bN-sg-7aE"/>
                             <constraint firstItem="Jh2-U2-QMv" firstAttribute="top" secondItem="Rqw-p1-vQ8" secondAttribute="bottom" constant="60" id="BMY-dv-kzj"/>
+                            <constraint firstItem="sDu-SY-fHN" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Qbw-Cx-HGQ"/>
+                            <constraint firstItem="2GM-kN-ZVY" firstAttribute="top" secondItem="sDu-SY-fHN" secondAttribute="bottom" constant="30" id="XYF-cM-byz"/>
                             <constraint firstItem="Rqw-p1-vQ8" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="YX2-0l-Y5g"/>
                             <constraint firstItem="Rqw-p1-vQ8" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="10" id="ZJk-fc-ETg"/>
+                            <constraint firstItem="2GM-kN-ZVY" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="fDe-1e-MoD"/>
                             <constraint firstItem="Jh2-U2-QMv" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="qzo-ya-mUG"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="mainLabel" destination="Rqw-p1-vQ8" id="3lw-L8-uOq"/>
+                        <outlet property="text1" destination="sDu-SY-fHN" id="4ii-r3-J4L"/>
+                        <outlet property="text2" destination="2GM-kN-ZVY" id="iag-t2-gmS"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
